@@ -1,5 +1,5 @@
 import platform
-import psutil, datetime
+import psutil
 def get_PC_info():
     info = {
             "System": platform.system(),
