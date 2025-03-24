@@ -7,7 +7,10 @@ def get_PC_info():
             "Release": platform.release(),
             "Version": platform.version(),
             "Machine": platform.machine(),
-            "Memory": psutil.virtual_memory()
+            "Memory": psutil.virtual_memory(),
+            "Architecture": platform.architecture(),
+            "Platform": platform.platform(),
+            "Compiler version": platform.python_compiler()
            }
     return info
 if __name__ == "__main__":
